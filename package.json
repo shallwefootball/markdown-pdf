@@ -1,6 +1,6 @@
 {
   "name": "@shallwefootball/markdown-pdf",
-  "version": "11.0.3",
+  "version": "11.0.4",
   "description": "Markdown to PDF converter",
   "main": "index.js",
   "scripts": {
