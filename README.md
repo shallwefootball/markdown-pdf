@@ -132,7 +132,7 @@ A function that returns a [through2 stream](https://npmjs.org/package/through2) 
 
 #### options.remarkable
 Type: `object`
-Default value: `{ breaks: true }`
+Default value: `{ breaks: false }`
 
 A config object that is passed to [remarkable](https://www.npmjs.com/package/remarkable#options), the underlying markdown parser.
 
