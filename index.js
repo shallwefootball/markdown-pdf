@@ -4,6 +4,7 @@ var childProcess = require('child_process')
 var through = require('through2')
 var extend = require('extend')
 var { Remarkable } = require('remarkable')
+var linkify = require('remarkable/linkify')
 var hljs = require('highlight.js')
 var tmp = require('tmp')
 var duplexer = require('duplexer')
@@ -55,7 +56,7 @@ function markdownpdf (opts) {
 
           return ''
         }
-      }, opts.remarkable))
+      }, opts.remarkable)).use(linkify)
 
       opts.remarkable.plugins.forEach(function (plugin) {
         if (plugin && typeof plugin === 'function') {
