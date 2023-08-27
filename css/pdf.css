@@ -113,3 +113,9 @@ blockquote:before,
 blockquote:after {
   content: "";
 }
+
+/* 링크 스타일 */
+a {
+  color: #428bca;
+  text-decoration: none;
+}

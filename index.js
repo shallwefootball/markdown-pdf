@@ -42,7 +42,6 @@ function markdownpdf (opts) {
       var self = this
 
       var mdParser = new Remarkable(opts.remarkable.preset, extend({
-        linkify: true, // autoconvert URL-like texts to links
         highlight: function (str, language) {
           if (language && hljs.getLanguage(language)) {
             try {
@@ -56,7 +55,7 @@ function markdownpdf (opts) {
 
           return ''
         }
-      }, opts.remarkable)).use(linkify)
+      }, opts.remarkable))
 
       opts.remarkable.plugins.forEach(function (plugin) {
         if (plugin && typeof plugin === 'function') {

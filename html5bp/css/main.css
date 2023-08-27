@@ -240,15 +240,17 @@ textarea {
 
     a,
     a:visited {
-        text-decoration: underline;
+    /*    text-decoration: underline;*/
     }
 
     a[href]:after {
-        content: " (" attr(href) ")";
+        /* 링크에 못생기게 나오는 이유 */
+        /*content: " (" attr(href) ")";*/
     }
 
     abbr[title]:after {
-        content: " (" attr(title) ")";
+        /* 링크에 못생기게 나오는 이유 */
+        /*content: " (" attr(title) ")";*/
     }
 
     /*
